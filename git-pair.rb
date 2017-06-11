@@ -6,4 +6,8 @@ class GitPair < Formula
   def install
     bin.install "git-pair"
   end
+
+  test do
+    git pair help
+  end
 end
